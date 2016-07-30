@@ -9,6 +9,6 @@ lazy val http4sVersion = "0.14.1a"
 libraryDependencies ++= Seq(
   "org.http4s"                  %% "http4s-dsl"           % http4sVersion,
   "org.http4s"                  %% "http4s-blaze-client"  % http4sVersion,
-  "org.scalatest"               %% "scalatest"            % ScalaTest.version.value % "test,it"
+  "org.scalatest"               %% "scalatest"            % "2.2.6" % "test,it"
 )
 
