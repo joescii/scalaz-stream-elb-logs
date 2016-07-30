@@ -12,3 +12,6 @@ libraryDependencies ++= Seq(
   "org.scalatest"               %% "scalatest"            % "2.2.6" % "test,it"
 )
 
+lazy val p = project.in(file(".")).
+  configs(IntegrationTest).
+  settings(Defaults.itSettings: _*)
