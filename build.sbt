@@ -9,7 +9,8 @@ lazy val http4sVersion = "0.14.1a"
 libraryDependencies ++= Seq(
   "org.http4s"                  %% "http4s-dsl"           % http4sVersion,
   "org.http4s"                  %% "http4s-blaze-client"  % http4sVersion,
-  "org.scalatest"               %% "scalatest"            % "2.2.6" % "test,it"
+  "org.scalatest"               %% "scalatest"            % "2.2.6" % "test,it",
+  "org.scalacheck"              %% "scalacheck"           % "1.13.2" % "test"
 )
 
 lazy val p = project.in(file(".")).
