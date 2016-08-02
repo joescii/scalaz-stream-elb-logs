@@ -9,7 +9,7 @@ object Time {
   def dateFormat(pattern: String): DateFormat =
     new SimpleDateFormat(pattern) !! (_.setTimeZone(utc))
 
-  def logDateFormat = Time.dateFormat("yyyy-MM-dd'T'HH:mm:ss")
+  def logDateFormat = Time.dateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
 
   def roundTime(c: Calendar, bucketSize: Int): Calendar = {
     val second = c.get(Calendar.SECOND) / bucketSize * bucketSize
